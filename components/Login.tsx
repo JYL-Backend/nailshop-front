@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button, Checkbox, Divider, FormControlLabel, Paper, TextField} from "@mui/material";
-import {GRAY_COLOR, YELLOW_COLOR} from "../colors/ButtonColors";
+import {GRAY_COLOR, YELLOW_COLOR} from "../common/colors/ButtonColors";
 import {useRouter} from "next/router";
 
 const LoginPage = () => {
