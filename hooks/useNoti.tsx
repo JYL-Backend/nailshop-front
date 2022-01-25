@@ -1,18 +1,35 @@
-import React from 'react';
-import { useSnackbar } from 'notistack';
+import { useRecoilState } from 'recoil';
+import { notiStackAtom } from '../atom/snackbarAtom';
 
-function useNoti(snackbar) {
-  const notiSuccess = (msg: string) => {
-    snackbar.enqueueSnackbar(msg, {
+export function useNoti() {
+  const [noti, setNoti] = useRecoilState(notiStackAtom);
+  const snackbarSuccess = (msg: string) => {
+    setNoti({
+      msg: msg,
       variant: 'success',
-      preventDuplicate: true,
     });
   };
-  const notiError = (msg: string) => {
-    snackbar.enqueueSnackbar(msg, { variant: 'error', preventDuplicate: true });
+
+  const snackbarError = (msg: string) => {
+    setNoti({
+      msg: msg,
+      variant: 'error',
+    });
   };
 
-  return [notiSuccess, notiError];
-}
+  const snackbarWarning = (msg: string) => {
+    setNoti({
+      msg: msg,
+      variant: 'warning',
+    });
+  };
 
-export default useNoti;
+  const snackbarInfo = (msg: string) => {
+    setNoti({
+      msg: msg,
+      variant: 'info',
+    });
+  };
+
+  return [snackbarSuccess, snackbarError, snackbarInfo, snackbarWarning];
+}

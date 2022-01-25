@@ -29,3 +29,12 @@ export const RegisterValidationSchema = yup
       .max(20, '휴대폰번호는 1~20자로 입력해주세요'),
   })
   .required();
+
+// 로그인폼
+export const LoginValidationSchema = yup
+  .object()
+  .shape({
+    email: yup.string().email('이메일 형식이 아닙니다').required('이메일을 필수 값입니다'),
+    password: yup.string().required('패스워드는 필수값입니다'),
+  })
+  .required();

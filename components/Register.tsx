@@ -5,13 +5,13 @@ import axios from 'axios';
 import { SERVER_URL } from '../common/strings/ServerInfo';
 import { RegisterValidationSchema } from '../valdiation/formValidationSchema';
 import { useFormik } from 'formik';
-import useNoti from '../hooks/useNoti';
 import { useSnackbar } from 'notistack';
 import { useRouter } from 'next/router';
+import { useNoti } from '../hooks/useNoti';
 
 const RegisterBox = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [notiSucess, notiError] = useNoti(useSnackbar());
+  const [snackbarSuccess, snackbarError] = useNoti();
   const router = useRouter();
   const formik = useFormik({
     initialValues: {
@@ -27,13 +27,13 @@ const RegisterBox = () => {
       axios
         .post(SERVER_URL + '/register', values)
         .then((response) => {
-          notiSucess('회원가입이 완료되었습니다');
+          snackbarSuccess('회원가입이 완료되었습니다');
           router.push('/my');
         })
         .catch((error) => {
           console.log(error.response);
           const errorMsg = error?.response?.data?.message || '알수없는 에러가 발생했습니다';
-          notiError(errorMsg);
+          snackbarError(errorMsg);
           setIsSubmitting(false);
         });
     },
