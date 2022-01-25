@@ -1,10 +1,11 @@
 import React, {useEffect} from 'react';
 import NavMenu from "./NavMenu";
 import {useRouter} from "next/router";
+import {useRecoilValue} from "recoil";
+import {accessTokenAtom} from "../../atom/tokenAtom";
 
 const NavMenuBar = () => {
     const router = useRouter();
-
 
     return (
         <div className={'flex w-full'}>
