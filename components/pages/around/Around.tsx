@@ -19,7 +19,7 @@ const AroundMain = () => {
         <PlainButton text={'지역변경'} />
       </div>
 
-      <div className={'flex flex-col w-full h-[200px] xl:h-[300px]'}>
+      <div className={'flex flex-col w-full h-[200px] '}>
         <KakaoMap />
       </div>
 

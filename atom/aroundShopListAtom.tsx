@@ -4,6 +4,7 @@ export const aroundShopListAtom = atom({
   key: 'aroundShopListAtom',
   default: [
     {
+      id: 2421,
       name: '네일노마 연산역점',
       rating: '5.0',
       commentCount: 24,
@@ -13,6 +14,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/643Pz/btri7REUlrB/LfT7BW72ggdUwans9P7Ps1/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '신지메이크업&amp;네일',
       rating: '4.8',
       commentCount: 20,
@@ -22,6 +24,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/bmhdi0/btqtCB0B99T/SGN7Jqd41uGkeZQcNb8Y4k/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '킴스네일카페 연산점',
       rating: '5.0',
       commentCount: 2,
@@ -31,6 +34,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/wR042/btquxwwzasS/uGLImxofMkkF5qWbGKNkVK/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '네일빛',
       rating: '5.0',
       commentCount: 51,
@@ -40,6 +44,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/bccDsZ/btqw0GcHWQ9/htqvVkNGRZp4q5fzxIl0pK/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '마벨리네일',
       rating: '4.7',
       commentCount: 78,
@@ -49,6 +54,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/dkndhM/btqAVFOnP0U/JuYpKvuKOypVHWL77QFGxk/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '크리스탈네일 양정점',
       rating: '4.9',
       commentCount: 135,
@@ -58,6 +64,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/0nc91/btqtN84mCpX/Wh933B9hkpncuQxyUcJGS1/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '아띠네일',
       rating: '5.0',
       commentCount: 6,
@@ -67,6 +74,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/YSrXu/btqy4ryogz8/IwQn4dsm2siF5gesorKmLk/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '어썸네일',
       rating: '5.0',
       commentCount: 1,
@@ -76,6 +84,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/mz3kr/btqwcIOzvP2/flB8o9bfpkAGubeo7ukojk/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '손더네일 서면점',
       rating: '4.8',
       commentCount: 213,
@@ -85,6 +94,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/LoFTh/btqt6DBCOH1/Lp5RR99LbabdBP8O8RhR1K/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '네일데스티니',
       rating: '4.9',
       commentCount: 56,
@@ -94,6 +104,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/dlTvRh/btqtMCDLIpQ/wkEVH0snokNGFVCbUbiZn1/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '뷰티온탑',
       rating: '4.9',
       commentCount: 45,
@@ -103,6 +114,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/F7z9d/btqClmfEYdm/9XWbUd9kcKcKsQAL5VpnR0/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '겸스네일',
       rating: '4.9',
       commentCount: 21,
@@ -112,6 +124,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/nGyCg/btqt3guGWZa/dsHPbEpfs8ck25EnbM1hs1/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '네일끌리다 동래점',
       rating: '5.0',
       commentCount: 3,
@@ -121,6 +134,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/bhAioH/btqtVdQEstD/1f6E5znqRk4YzqcRhLj5g0/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '누니끄뷰티살롱 양정점',
       rating: '5.0',
       commentCount: 1,
@@ -130,6 +144,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/didg6I/btqwAYqM8v8/Tpk0KRU6OxsmqiP688f460/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '힛더제이 광안점',
       rating: '5.0',
       commentCount: 4,
@@ -139,6 +154,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/n8xU3/btqvwQBB8Oc/LJ8gRGSCa8Yr0k9oSIoDek/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '아낙네일 명장안락본점',
       rating: '0.0',
       commentCount: 0,
@@ -148,6 +164,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/GYTqH/btqwVDAZuZ9/KG7is7k0DNNRKybCHxvNw0/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '아라누리네일앤뷰티',
       rating: '5.0',
       commentCount: 8,
@@ -157,6 +174,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/covksw/btquiPPt2Zv/uNBzR0O3sOlnJxJKtCEMKK/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '네일바이쏘 서면점',
       rating: '5.0',
       commentCount: 13,
@@ -166,6 +184,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/JqSxG/btqwdhqWEDu/DhHeR5WMF2L6RTC9jvwWLK/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '매료네일&amp;뷰티',
       rating: '5.0',
       commentCount: 5,
@@ -175,6 +194,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/ct7dPl/btqtLBstyh1/pzauF5dQnEnvYi2rS4ajp1/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '아이홀릭&amp;네일 광안점',
       rating: '0.0',
       commentCount: 0,
@@ -184,6 +204,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/K0ipe/btqyuTWxtbo/AneuI1k9gRKPzl9j3jsxi1/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '그레이스 네일 부산본점',
       rating: '4.9',
       commentCount: 42,
@@ -193,6 +214,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/LbZfK/btqAlyCZJUW/N1UKQ9D4O8Okf7iMnRamJk/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '손더네일 서면2호점',
       rating: '4.9',
       commentCount: 121,
@@ -202,6 +224,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/bnUOp5/btqAN919ofp/PifmB9SYBhaXb828lUSL0K/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '네일모나코',
       rating: '0.0',
       commentCount: 0,
@@ -211,6 +234,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/b153p7/btqtMgtYWzE/DTZpoZRVbeyUjFmsNQ65bk/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '포쉬네일 부산본점',
       rating: '5.0',
       commentCount: 7,
@@ -220,6 +244,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/bgP6Ue/btqtM13PaKg/IWTrk94XSUfx6OXIo28Q21/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '네일리안 부산남구점',
       rating: '4.7',
       commentCount: 2,
@@ -229,6 +254,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/fwaX9/btqt1Eoe4U7/vwcyUwUNuPKw5c3JIr2YIk/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '메르 정원 서면점',
       rating: '5.0',
       commentCount: 10,
@@ -238,6 +264,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/KfMay/btqvBEUcZAz/NhGg4KPOcC0JS0qfXwfBdk/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '드리밍뷰티 서면점',
       rating: '5.0',
       commentCount: 11,
@@ -247,6 +274,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/c7V4mC/btqzexxZnx4/HnbWNns7VyYQdhJpfISSlK/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '미드나잇네일 연산점',
       rating: '0.0',
       commentCount: 0,
@@ -256,6 +284,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/hlvTt/btrfiG0kCIZ/LzaFjK396loSk219KlzRYK/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '쁘띠아이즈 센텀',
       rating: '5.0',
       commentCount: 2,
@@ -265,6 +294,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/eWM4d/btqC9zlFTHB/GsyMNz0E08rmA90nVmu4DK/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '또네일 부산연지점',
       rating: '4.5',
       commentCount: 2,
@@ -274,6 +304,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/bfUVXL/btqwXWyYg8r/anQZiLo35EWXUBLGLsTAqk/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '손더네일 사직점',
       rating: '4.9',
       commentCount: 36,
@@ -283,6 +314,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/d0FlAs/btqNCxjw1bi/HTgLLScK8AHi8CaHzvXQv1/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '그남자의네일공간 본점',
       rating: '5.0',
       commentCount: 3,
@@ -292,6 +324,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/cDybUS/btqOUln7zVH/ZbHYcdKWWNVLFB2agRhCG1/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '에이블링네일&amp;속눈썹 서면점',
       rating: '5.0',
       commentCount: 2,
@@ -301,6 +334,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/QO43m/btqC2sr5XUJ/y82PnTxqESGGQqwKWmrv21/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '미대언니네일살롱',
       rating: '5.0',
       commentCount: 1,
@@ -310,6 +344,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/bVhOYk/btqBGqo5Awx/AiA0YaKOzFgrck6RBlC881/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '네일바이손 양정점',
       rating: '5.0',
       commentCount: 1,
@@ -319,6 +354,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/VKRcc/btqZQIf4yUa/HQ3TVyL55N31An356WIIUk/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '꼼꼼이네일&amp;속눈썹 안락점',
       rating: '0.0',
       commentCount: 0,
@@ -328,6 +364,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/bYvnn1/btq6Ld8qtNZ/WajQLZ9eCOxmPBQ4p8IYk1/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '클래시 부산서면점',
       rating: '5.0',
       commentCount: 2,
@@ -337,6 +374,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/bAjrXJ/btqF5fdq1eg/taZTSotY6kIYIVvW1oqeP0/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '델리카네일 광안점',
       rating: '0.0',
       commentCount: 0,
@@ -346,6 +384,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/Vkfcp/btq2JxvArrN/GisdY80OY2M6XoUsX86Fqk/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '나니뷰티 서면점',
       rating: '5.0',
       commentCount: 4,
@@ -355,6 +394,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/dhXTkP/btqMwfrhPL5/ALPyhP8yQW8Jgux5ZkVBo0/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '미유(MeYou) 사직점',
       rating: '0.0',
       commentCount: 0,
@@ -364,6 +404,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/hWYEV/btq354q0txP/q7Lp5VDJKqCmfph3M72EKk/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '김언니뷰티',
       rating: '5.0',
       commentCount: 2,
@@ -373,6 +414,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/iJI56/btqU4LAM97u/je1GQMjl1M5WV4tUtKFVJK/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '오늘엔네일 본점',
       rating: '5.0',
       commentCount: 7,
@@ -382,6 +424,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/baAXp6/btq8xLVOL4m/kYZedO7ZO0llLhIFi8Vli0/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '살아있네일 서면점',
       rating: '4.9',
       commentCount: 27,
@@ -391,6 +434,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/csCHyU/btqE6AHHLEq/ZLIeZFk3JQfDQhBGl00zk0/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '사직동네일샵 본점',
       rating: '5.0',
       commentCount: 1,
@@ -400,6 +444,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/9BrJH/btqUYfVSIJx/wpkqAoQycV9hirLSV5w8k0/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '네일앤미 사직점',
       rating: '5.0',
       commentCount: 1,
@@ -409,6 +454,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/bGJEhe/btq9tJhzVza/Bp5iL3894Qq124aDRShY40/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '랑만뷰티살롱 경성대점',
       rating: '4.9',
       commentCount: 10,
@@ -418,6 +464,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/coFj8G/btqF7tnL6yZ/xy1baRH6PAoUoKDw3wJ7K0/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '비비드 사직동본점',
       rating: '5.0',
       commentCount: 5,
@@ -427,6 +474,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/bWisDN/btq70ogmezI/UhVhkcalJKNxZXo4qeSZkK/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '슈퍼네일 서면점',
       rating: '5.0',
       commentCount: 2,
@@ -436,6 +484,7 @@ export const aroundShopListAtom = atom({
         'https://mud-kage.kakao.com/dn/bQdphm/btrobUDYZUE/KoFsEtDssQVZVVkwcU5Nc1/img_a375x375.jpg',
     },
     {
+      id: 2421,
       name: '네일클로버 온천장역점',
       rating: '5.0',
       commentCount: 1,

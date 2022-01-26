@@ -8,7 +8,7 @@ const NavMenuBar = () => {
   const router = useRouter();
 
   return (
-    <div className={'flex w-full'}>
+    <div className={'flex w-full sticky top-0 bg-white z-50'}>
       <NavMenu name={'내주변'} href={'/around'} isActive={router.pathname == '/around'} />
       <NavMenu name={'스타일북'} href={'/stylebook'} isActive={router.pathname == '/stylebook'} />
       <NavMenu name={'예약'} href={'/reservation'} isActive={router.pathname == '/reservation'} />

@@ -74,7 +74,7 @@ const LoginPage = () => {
       className={'w-full flex-1 flex items-center justify-center mt-20'}
       onSubmit={formik.handleSubmit}
     >
-      <Paper className={'flex flex-col gap-y-5 p-10 w-full xl:w-[1000px]'} elevation={5}>
+      <Paper className={'flex flex-col gap-y-5 p-10 w-full'} elevation={5}>
         <span className={'font-bold text-3xl'}>Nail Shop</span>
         <TextField
           label={'이메일'}

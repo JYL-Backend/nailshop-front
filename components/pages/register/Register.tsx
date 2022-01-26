@@ -43,7 +43,7 @@ const RegisterBox = () => {
       onSubmit={formik.handleSubmit}
       className={'flex-1 w-full px-5 flex items-center justify-center'}
     >
-      <Paper className={'flex flex-col w-full xl:w-[900px] p-10 gap-y-6'} elevation={5}>
+      <Paper className={'flex flex-col w-full p-10 gap-y-6'} elevation={5}>
         <span className={'text-2xl font-bold'}>회원가입</span>
         <Divider />
         <TextField

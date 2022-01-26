@@ -7,7 +7,7 @@ import NavMenuBar from '../components/layout1/NavMenuBar';
 
 const HomeLayout = ({ children }) => {
   return (
-    <div className="flex flex-col items-center justify-center w-full ">
+    <div className="flex flex-col items-center justify-center w-full md:w-[740px] mx-auto ">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -22,7 +22,7 @@ const HomeLayout = ({ children }) => {
         ></script>
       </Head>
 
-      <main className="flex flex-col  w-full  flex-1  text-center px-5 xl:px-10">
+      <main className="flex flex-col  w-full  flex-1  text-center px-5">
         {/* 헤더 */}
         <HeaderLayout1 />
 
