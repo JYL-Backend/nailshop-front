@@ -8,21 +8,22 @@ import {
   Paper,
   TextField,
 } from '@mui/material';
-import { GRAY_COLOR, YELLOW_COLOR } from '../common/colors/ButtonColors';
+import { GRAY_COLOR, YELLOW_COLOR } from '../../../common/colors/ButtonColors';
 import { useRouter } from 'next/router';
 import { useFormik } from 'formik';
-import { LoginValidationSchema } from '../valdiation/formValidationSchema';
+import { LoginValidationSchema } from '../../../valdiation/formValidationSchema';
 import axios from 'axios';
-import { SERVER_URL } from '../common/strings/ServerInfo';
-import { useNoti } from '../hooks/useNoti';
+import { SERVER_URL } from '../../../common/strings/ServerInfo';
+import { useNoti } from '../../../hooks/useNoti';
 import { useRecoilState } from 'recoil';
-import { accessTokenAtom, refreshTokenAtom } from '../atom/tokenAtom';
+import { accessTokenAtom, refreshTokenAtom, userInfoAtom } from '../../../atom/tokenAtom';
 
 const LoginPage = () => {
   const router = useRouter();
   const [isLogining, setIsLogining] = useState(false);
   const [accessToken, setAccessToken] = useRecoilState(accessTokenAtom);
   const [refreshToken, setRefreshToken] = useRecoilState(refreshTokenAtom);
+  const [userInfo, setUserInfo] = useRecoilState(userInfoAtom);
   const [snackbarSuccess, snackbarError] = useNoti();
   const handleOnClickRegister = () => {
     router.push('/register');
@@ -43,13 +44,20 @@ const LoginPage = () => {
           console.log(response.data);
           snackbarSuccess('로그인 완료');
           setIsLogining(false);
+          // 엑세스토큰
           setAccessToken({
             token: response.data.accessToken,
             expire: response.data.accessTokenExpiresIn,
           });
+          // 리프레시 토큰
           setRefreshToken({
             token: response.data.refreshToken,
             expire: response.data.refreshTokenExpiresIn,
+          });
+          // 유저정보
+          setUserInfo({
+            email: response.data.email,
+            name: response.data.name,
           });
         })
         .catch((error) => {
@@ -63,7 +71,7 @@ const LoginPage = () => {
 
   return (
     <form
-      className={'w-full flex-1 flex items-center justify-center'}
+      className={'w-full flex-1 flex items-center justify-center mt-20'}
       onSubmit={formik.handleSubmit}
     >
       <Paper className={'flex flex-col gap-y-5 p-10 w-full xl:w-[1000px]'} elevation={5}>

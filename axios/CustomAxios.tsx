@@ -4,6 +4,7 @@ import { accessTokenAtom, refreshTokenAtom } from '../atom/tokenAtom';
 import axios from 'axios';
 import { SERVER_URL } from '../common/strings/ServerInfo';
 import { notiStackAtom } from '../atom/snackbarAtom';
+import { useNoti } from '../hooks/useNoti';
 
 function useCustomAxios() {
   const [accessToken, setAccessToken] = useRecoilState(accessTokenAtom);
@@ -13,7 +14,7 @@ function useCustomAxios() {
     baseURL: SERVER_URL,
   });
 
-  const [noti, setNoti] = useRecoilState(notiStackAtom);
+  const [snackbarError] = useNoti();
 
   customAxios.interceptors.request.use(
     async function (config: any) {
@@ -65,10 +66,7 @@ function useCustomAxios() {
       console.log(error.response);
       const msg = error?.response?.data?.message;
       console.log(msg);
-      setNoti({
-        msg: msg ? msg : '서버 에러',
-        variant: 'error',
-      });
+      snackbarError(msg);
       return Promise.reject(null);
     },
   );

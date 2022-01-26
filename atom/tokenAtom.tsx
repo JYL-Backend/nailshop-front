@@ -17,3 +17,12 @@ export const refreshTokenAtom = atom({
     expire: null,
   },
 });
+
+// 사용자명
+export const userInfoAtom = atom({
+  key: 'userInfoAtom',
+  default: {
+    email: null,
+    name: null,
+  },
+});

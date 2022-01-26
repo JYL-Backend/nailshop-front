@@ -1,11 +1,8 @@
 import React from 'react';
+import AroundMain from '../components/pages/around/Around';
 
 const AroundPage = () => {
-    return (
-        <div>
-            around
-        </div>
-    );
+  return <AroundMain />;
 };
 
 export default AroundPage;
