@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRecoilValue } from 'recoil';
 import { accessTokenAtom } from '../atom/tokenAtom';
-import LoginPage from '../components/pages/login/Login';
+import LoginPage from '../containers/login/Login';
 import HomeLayout from '../layout/HomeLayout';
 
 const ReservationPage = () => {

@@ -1,11 +1,11 @@
 import React from 'react';
 import { LocationOn } from '@mui/icons-material';
-import PlainButton from '../../common/button/PlainButton';
-import KakaoMap from '../../common/map/KakaoMap';
+import PlainButton from '../../components/button/PlainButton';
 import { useRecoilState } from 'recoil';
-import { aroundShopListAtom } from '../../../atom/aroundShopListAtom';
-import ShopRow from './ShopRow';
+import { aroundShopListAtom } from '../../atom/aroundShopListAtom';
 import { Divider } from '@mui/material';
+import KakaoMap from '../../components/map/KakaoMap';
+import ShopRow from './ShopRow';
 
 const AroundMain = () => {
   const [aroundShopList, setAroundShopList] = useRecoilState(aroundShopListAtom);

@@ -8,15 +8,15 @@ import {
   Paper,
   TextField,
 } from '@mui/material';
-import { GRAY_COLOR, YELLOW_COLOR } from '../../../common/colors/ButtonColors';
+import { GRAY_COLOR, YELLOW_COLOR } from '../../common/colors/ButtonColors';
 import { useRouter } from 'next/router';
 import { useFormik } from 'formik';
-import { LoginValidationSchema } from '../../../valdiation/formValidationSchema';
+import { LoginValidationSchema } from '../../valdiation/formValidationSchema';
 import axios from 'axios';
-import { SERVER_URL } from '../../../common/strings/ServerInfo';
-import { useNoti } from '../../../hooks/useNoti';
+import { SERVER_URL } from '../../common/strings/ServerInfo';
+import { useNoti } from '../../hooks/useNoti';
 import { useRecoilState } from 'recoil';
-import { accessTokenAtom, refreshTokenAtom, userInfoAtom } from '../../../atom/tokenAtom';
+import { accessTokenAtom, refreshTokenAtom, userInfoAtom } from '../../atom/tokenAtom';
 
 const LoginPage = () => {
   const router = useRouter();

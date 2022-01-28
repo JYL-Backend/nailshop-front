@@ -1,5 +1,5 @@
 import React from 'react';
-import AroundMain from '../components/pages/around/Around';
+import AroundMain from '../containers/around/Around';
 
 const AroundPage = () => {
   return <AroundMain />;

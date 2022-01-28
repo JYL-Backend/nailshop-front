@@ -5,7 +5,7 @@ export const TmpShopPickMenus = [
     name: '깔끔 젤 기본 손톱',
     price: '26,400',
     discountPrice: '33,000',
-    discountRating: '20%',
+    discountRate: '20%',
   },
   {
     imgSrc:
@@ -13,7 +13,7 @@ export const TmpShopPickMenus = [
     name: '깔끔 발젤 기본',
     price: '40,000',
     discountPrice: '50,000',
-    discountRating: '20%',
+    discountRate: '20%',
   },
   {
     imgSrc:
@@ -21,7 +21,7 @@ export const TmpShopPickMenus = [
     name: '[이달의 아트] 열려라 열매열매',
     price: '49,000',
     discountPrice: '70,000',
-    discountRating: '30%',
+    discountRate: '30%',
   },
   {
     imgSrc:
@@ -29,7 +29,7 @@ export const TmpShopPickMenus = [
     name: '[이달의네일]은은하게빛나는미러네일',
     price: '40,000',
     discountPrice: '50,000',
-    discountRating: '20%',
+    discountRate: '20%',
   },
   {
     imgSrc:
@@ -37,6 +37,6 @@ export const TmpShopPickMenus = [
     name: '[이달의네일]그린그린라이테잎네일',
     price: '40,000',
     discountPrice: '50,000',
-    discountRating: '20%',
+    discountRate: '20%',
   },
 ];

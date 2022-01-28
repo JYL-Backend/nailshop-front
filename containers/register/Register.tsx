@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Button, CircularProgress, Divider, Paper, TextField } from '@mui/material';
-import { YELLOW_COLOR } from '../../../common/colors/ButtonColors';
+import { YELLOW_COLOR } from '../../common/colors/ButtonColors';
 import axios from 'axios';
-import { SERVER_URL } from '../../../common/strings/ServerInfo';
-import { RegisterValidationSchema } from '../../../valdiation/formValidationSchema';
+import { SERVER_URL } from '../../common/strings/ServerInfo';
+import { RegisterValidationSchema } from '../../valdiation/formValidationSchema';
 import { useFormik } from 'formik';
 import { useSnackbar } from 'notistack';
 import { useRouter } from 'next/router';
-import { useNoti } from '../../../hooks/useNoti';
+import { useNoti } from '../../hooks/useNoti';
 
 const RegisterBox = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);

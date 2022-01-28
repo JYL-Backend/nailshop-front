@@ -2,8 +2,8 @@ import React from 'react';
 import Head from 'next/head';
 import { Search } from '@mui/icons-material';
 import { Tab, Tabs } from '@mui/material';
-import HeaderLayout1 from '../components/layout1/HeaderLayout1';
-import NavMenuBar from '../components/layout1/NavMenuBar';
+import HeaderLayout1 from '../containers/layout1/HeaderLayout1';
+import NavMenuBar from '../containers/layout1/NavMenuBar';
 
 const HomeLayout = ({ children }) => {
   return (
@@ -11,6 +11,7 @@ const HomeLayout = ({ children }) => {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel={'stylesheet'} href={'http://fonts.googleapis.com/earlyaccess/notosanskr.css'} />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
