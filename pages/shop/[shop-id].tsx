@@ -22,6 +22,8 @@ import 'swiper/css/navigation';
 import UserReviewbox from '../../containers/shopdetail/UserReviewBox';
 import { TmpUserReviews } from '../../tmp/TmpUserReview';
 import DesignerAnswerBox from '../../containers/shopdetail/DesignerAnswerBox';
+import ReviewContainer from '../../containers/review/ReviewContainer';
+import PhotoReviewRowScroll from '../../containers/review/PhotoReviewRowScroll';
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -139,6 +141,7 @@ const ShopDetailPage = () => {
                 price={pickMenu.price}
                 discountPrice={pickMenu.discountPrice}
                 discountRate={pickMenu.discountRate}
+                link={pickMenu.link}
               />
               <Divider />
             </>
@@ -155,56 +158,10 @@ const ShopDetailPage = () => {
           <Divider />
           {/* 예약고객 리뷰 */}
           <span className={'text-lg font-bold'}>예약고객 리뷰 11</span>
-          <Swiper spaceBetween={5} slidesPerView={6.3} className={'w-full hidden xl:block z-0'}>
-            {TmpShopReviewThumbnails.map((thumbnail) => (
-              <SwiperSlide>
-                <img src={thumbnail.imgSrc} className={'rounded-sm z-0'} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          <Swiper spaceBetween={5} slidesPerView={4.2} className={'w-full z-0'}>
-            {TmpShopReviewThumbnails.map((thumbnail) => (
-              <SwiperSlide>
-                <img src={thumbnail.imgSrc} className={'rounded-sm xl:hidden z-0'} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-
+          <PhotoReviewRowScroll />
           <Divider />
           {/* 리뷰 박스*/}
-          {TmpUserReviews.map((review) => (
-            <>
-              <UserReviewbox
-                nickname={review.nickname}
-                name={review.name}
-                registDt={review.registDt}
-                reservationCount={review.reservationCount}
-                rating={review.rating}
-                content={review.content}
-                imgSrc={review.imgSrc}
-              />
-              <DesignerAnswerBox
-                jobTitle={'수석디자이너'}
-                nickname={'준영'}
-                content={
-                  '소중한 리뷰 감사합니다. 고객님!!^^\n' +
-                  '\n' +
-                  '한듯 안한듯 이쁜 시럽젤 \n' +
-                  '손이 더욱더 깨끗해보여요~\n' +
-                  '\n' +
-                  '코로나 때문에 우울하지만 이뻐진 손톱 보고 힐링 하시길 바랍니다~\n' +
-                  '\n' +
-                  '다음에도 또 뵙겠습니다!!\n' +
-                  '감사합니다더욱더 노력하는 크리스탈 되겠습니다.~~~~♥♥♥♥'
-                }
-                registDt={'15시간전'}
-                profileImg={
-                  'https://mud-kage.kakao.com/dn/bWZPs1/btrlr5Uy6Vv/QIjcKWXuOpDPwiS8yI3knk/img_375x375.jpg'
-                }
-              />
-              <Divider />
-            </>
-          ))}
+          <ReviewContainer />
         </div>
       </div>
     </div>
