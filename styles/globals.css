@@ -77,3 +77,7 @@
             rgba(174, 63, 255, 1) 100%
     );
 }
+
+a {
+    text-decoration: none !important;
+}

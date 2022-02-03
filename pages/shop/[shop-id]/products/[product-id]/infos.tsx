@@ -9,12 +9,19 @@ import {
 } from '@mui/icons-material';
 import Price from '../../../../../components/price/Price';
 import ProfileShop from '../../../../../components/profile/ProfileShop';
-import { Button, Divider } from '@mui/material';
+import { Button, Divider, Link } from '@mui/material';
 import ReviewContainer from '../../../../../containers/review/ReviewContainer';
 import PhotoReviewRowScroll from '../../../../../containers/review/PhotoReviewRowScroll';
 import { JAMONG_COLOR, YELLOW_COLOR } from '../../../../../common/colors/ButtonColors';
+import { useRouter } from 'next/router';
 
 const MenuInfoPage = () => {
+  const router = useRouter();
+  // 예약하기 버튼
+  const handleClickReservationButton = () => {
+    router.push('/reservations/schedule/product/22222');
+  };
+
   return (
     <div className={'flex flex-col w-full  gap-y-5 py-5'}>
       <img
@@ -56,7 +63,7 @@ const MenuInfoPage = () => {
             <CampaignOutlined />
             <span className={'font-bold'}>부가정보</span>
           </div>
-          <div className={'flex gap-x-5 font-light'}>
+          <div className={'flex gap-x-5 '}>
             <div className={'flex flex-col gap-y-1'}>
               <span>시술구성</span>
               <span>젤제거</span>
@@ -67,7 +74,7 @@ const MenuInfoPage = () => {
             </div>
           </div>
         </div>
-        <p className={'font-light'}>
+        <p>
           드릴케어+젤 투톤 풀콧+손 마사지(젤 제거 별도) 젤을 이용한 기본 풀콧 칼라링입니다. 두가지
           색상을 선택하실수 있습니다.
         </p>
@@ -83,8 +90,10 @@ const MenuInfoPage = () => {
       </div>
 
       {/* 예약하기 버튼*/}
-      <div className={'w-full bg-white sticky bottom-0 py-5 z-40'}>
+      <div className={'w-full bg-white sticky bottom-0 py-5 z-40 shadow-[#50d71e] px-5 xl:px-0'}>
+        {/*<Link href={'/reservations/schedule/products/45646'}>*/}
         <Button
+          onClick={handleClickReservationButton}
           variant={'contained'}
           style={{ backgroundColor: JAMONG_COLOR, color: 'white' }}
           className={'font-bold text-md py-3  w-full'}
@@ -92,6 +101,7 @@ const MenuInfoPage = () => {
         >
           예약하기
         </Button>
+        {/*</Link>*/}
       </div>
     </div>
   );

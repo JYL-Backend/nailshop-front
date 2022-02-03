@@ -32,7 +32,7 @@ const DetailLayout = ({ children }) => {
 
       <main className="flex flex-col  w-full  flex-1  ">
         <div className="flex flex-col items-center justify-center w-full md:w-[650px] mx-auto ">
-          <div className={'w-full flex gap-x-3 px-5 items-center sticky top-0 z-50 bg-white'}>
+          <div className={'w-full flex gap-x-3 py-2 items-center sticky top-0 z-50 bg-white'}>
             <KeyboardArrowLeft
               sx={{ fontSize: 40 }}
               className={'cursor-pointer'}
