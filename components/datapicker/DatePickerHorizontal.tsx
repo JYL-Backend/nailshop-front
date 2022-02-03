@@ -8,11 +8,7 @@ interface Props {
   onClick?: () => {};
 }
 
-const DatePickerHorizontal = ({
-  startDate = new Date(),
-  duration = 30,
-  onClick = () => {},
-}: Props) => {
+const DatePickerHorizontal = ({ startDate = new Date(), duration = 30 }: Props) => {
   const [selectedDate, setSelectedDate] = useState(startDate?.toLocaleDateString());
   const week = WEEK_ARRAY;
   let dayArray = [];
