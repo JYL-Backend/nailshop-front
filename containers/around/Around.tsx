@@ -6,6 +6,7 @@ import { aroundShopListAtom } from '../../atom/aroundShopListAtom';
 import { Divider } from '@mui/material';
 import KakaoMap from '../../components/map/KakaoMap';
 import ShopRow from './ShopRow';
+import { ShopRowInterface } from '../../interface/ShopRowInterface';
 
 const AroundMain = () => {
   const [aroundShopList, setAroundShopList] = useRecoilState(aroundShopListAtom);

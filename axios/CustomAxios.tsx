@@ -27,7 +27,7 @@ function useCustomAxios() {
       }
 
       // 만약 현재시간이 만료 100초전? 새토큰 발급
-      if (accessToken.expire - 100 * 1000 < new Date().getTime()) {
+      if ((accessToken.expire ? accessToken.expire : 0) - 100 * 1000 < new Date().getTime()) {
         await axios
           .post(SERVER_URL + '/token/reissue', {
             accessToken: accessToken.token,

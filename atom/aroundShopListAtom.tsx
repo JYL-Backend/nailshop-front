@@ -1,4 +1,5 @@
 import { atom } from 'recoil';
+import { ShopRowInterface } from '../interface/ShopRowInterface';
 
 export const aroundShopListAtom = atom({
   key: 'aroundShopListAtom',

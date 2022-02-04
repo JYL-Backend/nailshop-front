@@ -1,6 +1,7 @@
 import React from 'react';
 import { TmpShopReviewThumbnails } from '../../tmp/TmpShopReviewThumbnails';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const PhotoReviewRowScroll = () => {
   return (
@@ -12,10 +13,10 @@ const PhotoReviewRowScroll = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <Swiper spaceBetween={5} slidesPerView={4.2} className={'w-full z-0'}>
+      <Swiper spaceBetween={5} slidesPerView={4.2} className={'w-full z-0 xl:hidden'}>
         {TmpShopReviewThumbnails.map((thumbnail) => (
           <SwiperSlide>
-            <img src={thumbnail.imgSrc} className={'rounded-sm xl:hidden z-0'} />
+            <img src={thumbnail.imgSrc} className={'rounded-sm  z-0'} />
           </SwiperSlide>
         ))}
       </Swiper>

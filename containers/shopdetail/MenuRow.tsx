@@ -6,9 +6,9 @@ import Price from '../../components/price/Price';
 interface Props {
   imgSrc?: string;
   name: string;
-  price: string;
-  discountPrice?: string;
-  discountRate?: string;
+  price: number;
+  discountPrice?: number;
+  discountRate?: number;
   link: string;
 }
 

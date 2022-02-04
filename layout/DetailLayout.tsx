@@ -5,7 +5,7 @@ import Head from 'next/head';
 import HeaderLayout1 from '../containers/layout1/HeaderLayout1';
 import NavMenuBar from '../containers/layout1/NavMenuBar';
 
-const DetailLayout = ({ children }) => {
+const DetailLayout = ({ children }: any) => {
   const router = useRouter();
   const handleClickBack = () => {
     router.back();

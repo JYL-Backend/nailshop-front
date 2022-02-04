@@ -1,18 +1,9 @@
 import React from 'react';
 import { ChatBubble, Star } from '@mui/icons-material';
 import { useRouter } from 'next/router';
+import { ShopRowInterface } from '../../interface/ShopRowInterface';
 
-interface Props {
-  id: number;
-  name: string;
-  rating: string;
-  commentCount: number;
-  simpleAddress: string;
-  price: string;
-  thumbnailUrl: string;
-}
-
-const ShopRow = ({ shop }: Props) => {
+const ShopRow = ({ shop }: { shop: ShopRowInterface }) => {
   const router = useRouter();
   return (
     <div

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { WEEK_ARRAY } from '../../common/strings/Week';
+import 'swiper/css';
 
 interface Props {
   startDate?: Date;
@@ -32,7 +33,6 @@ const DatePickerHorizontal = ({ startDate = new Date(), duration = 30 }: Props) 
                 <div
                   className={'flex flex-col items-center gap-y-3 cursor-pointer'}
                   onClick={() => {
-                    onClick();
                     handleDateClick(d.toLocaleDateString());
                   }}
                 >
@@ -62,7 +62,6 @@ const DatePickerHorizontal = ({ startDate = new Date(), duration = 30 }: Props) 
                 <div
                   className={'flex flex-col items-center gap-y-3 cursor-pointer'}
                   onClick={() => {
-                    onClick();
                     handleDateClick(d.toLocaleDateString());
                   }}
                 >

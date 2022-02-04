@@ -5,7 +5,7 @@ import { Tab, Tabs } from '@mui/material';
 import HeaderLayout1 from '../containers/layout1/HeaderLayout1';
 import NavMenuBar from '../containers/layout1/NavMenuBar';
 
-const HomeLayout = ({ children }) => {
+const HomeLayout = ({ children }: any) => {
   return (
     <div className="flex flex-col items-center justify-center w-full md:w-[740px] mx-auto ">
       <Head>

@@ -4,7 +4,7 @@ interface Props {
   price: number;
   discountPrice?: number;
   discountRate?: number;
-  textSize: 'xs' | 'sm' | 'base' | 'lg' | 'xl' | '2xl' | '3xl' | string;
+  textSize?: 'xs' | 'sm' | 'base' | 'lg' | 'xl' | '2xl' | '3xl' | string;
 }
 const Price = ({ price, discountPrice, discountRate, textSize = 'base' }: Props) => {
   const cn = 'flex gap-x-2 ' + 'text-' + textSize;

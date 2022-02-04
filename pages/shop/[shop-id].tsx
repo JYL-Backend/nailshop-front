@@ -19,9 +19,6 @@ import SwiperCore, { EffectCube, Pagination, Navigation } from 'swiper';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-import UserReviewbox from '../../containers/shopdetail/UserReviewBox';
-import { TmpUserReviews } from '../../tmp/TmpUserReview';
-import DesignerAnswerBox from '../../containers/shopdetail/DesignerAnswerBox';
 import ReviewContainer from '../../containers/review/ReviewContainer';
 import PhotoReviewRowScroll from '../../containers/review/PhotoReviewRowScroll';
 
@@ -34,7 +31,7 @@ const ShopDetailPage = () => {
         <Swiper
           grabCursor={true}
           navigation={true}
-          style={{ '--swiper-navigation-color': 'white' }}
+          style={{ '--swiper-navigation-color': 'white' } as React.CSSProperties}
         >
           <SwiperSlide>
             <div className={'w-full h-[300px] xl:h-[400px] overflow-hidden'}>

@@ -1,9 +1,15 @@
 import { atom } from 'recoil';
+import { VariantType } from 'notistack';
 
-export const notiStackAtom = atom({
+interface notiInterface {
+  msg: string;
+  variant: VariantType;
+}
+
+export const notiStackAtom = atom<notiInterface>({
   key: 'notiStackAtom',
   default: {
     msg: '',
-    variant: '',
+    variant: 'default',
   },
 });

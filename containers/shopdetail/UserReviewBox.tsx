@@ -1,15 +1,6 @@
 import React from 'react';
 import { Divider, Rating } from '@mui/material';
-
-interface Props {
-  nickname: string;
-  name: string;
-  registDt: string;
-  reservationCount: number;
-  rating: number;
-  content: string;
-  imgSrc: string;
-}
+import { UserReviewInterface } from '../../interface/UserReviewInterface';
 
 const UserReviewbox = ({
   nickname,
@@ -19,7 +10,7 @@ const UserReviewbox = ({
   rating,
   content,
   imgSrc,
-}: Props) => {
+}: UserReviewInterface) => {
   return (
     <div className={'gap-y-1 flex flex-col'}>
       <div>

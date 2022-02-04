@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 
 interface Props {
-  startHour: number;
-  endHour: number;
-  startMinute: 30 | 0;
-  endMinute: 30 | 0;
+  startHour?: number;
+  endHour?: number;
+  startMinute?: 30 | 0;
+  endMinute?: 30 | 0;
+}
+
+interface TimeInterface {
+  hour: number;
+  minute: number;
 }
 const TimePickerTable = ({
   startHour = 0,
@@ -12,12 +17,12 @@ const TimePickerTable = ({
   startMinute = 0,
   endMinute = 0,
 }: Props) => {
-  const [selectedTime, setSelectedTime] = useState({
-    hour: null,
-    minute: null,
+  const [selectedTime, setSelectedTime] = useState<TimeInterface>({
+    hour: 0,
+    minute: 0,
   });
 
-  const handleClickTime = (hour, minute) => {
+  const handleClickTime = (hour: number, minute: number) => {
     setSelectedTime({
       hour: hour,
       minute: minute,

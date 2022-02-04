@@ -1,13 +1,15 @@
 import React from 'react';
-import { TmpUserReviews } from '../../tmp/TmpUserReview';
 import UserReviewbox from '../shopdetail/UserReviewBox';
 import DesignerAnswerBox from '../shopdetail/DesignerAnswerBox';
 import { Divider } from '@mui/material';
+import { useRecoilValue } from 'recoil';
+import { userReviewsAtom } from '../../atom/UserReviewsAtom';
 
 const ReviewContainer = () => {
+  const userReviews = useRecoilValue(userReviewsAtom);
   return (
     <>
-      {TmpUserReviews.map((review) => (
+      {userReviews.map((review) => (
         <>
           <UserReviewbox
             nickname={review.nickname}
